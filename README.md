@@ -2,14 +2,14 @@ Simple tool to split coco annotations (json) into train and test sets.
 
 ## Why a new fork?
 
-For spliting new datasets with coco annotation style. To train visual tasks, we only need the `images, annotations,categories` attributes. So, the annotation file of new datasets usually contains only these information but not the `info, licenses` attributes. However. the original repo assumed these attributes, and thus do not work for these datasets. Also, the original repo pretty-printed the json, but it increases the size of the output json files. This fork produces minimal output json files.
+For spliting new datasets with coco annotation style. To train a computer vision model, we only need the `images, annotations, categories` attributes. Hence, annotation files of new datasets usually contain only these information but not the `info, licenses` attributes. However. the original repo assumes these attributes, and thus does not work for these datasets. Also, the original repo pretty-printed the json, increasing the size of the output json files. This fork produces minimal output json files.
 
 ## Installation
 
-``cocosplit`` requires python 3 and basic set of dependencies:
+``cocosplit`` requires python 3 and a basic set of dependencies:
 
 ```
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 ## Usage
